@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4zg-UK-ZIr">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="127"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Pull to refresh 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="c4b-cf-Wys">
+                    <rect key="frame" x="284" y="8" width="33" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="CHf-X2-ezt"/>
+                        <constraint firstAttribute="width" secondItem="c4b-cf-Wys" secondAttribute="height" multiplier="11:12" id="Mr2-o9-1dn"/>
+                        <constraint firstAttribute="width" constant="33" id="bSf-U0-FMy"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="CHf-X2-ezt"/>
+                            <exclude reference="Mr2-o9-1dn"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pull to refresh 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="zey-C2-9uu">
+                    <rect key="frame" x="284" y="47" width="33" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="zey-C2-9uu" secondAttribute="height" multiplier="11:12" id="1jJ-aF-q3p"/>
+                        <constraint firstAttribute="height" constant="31" id="stF-CB-vIY"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1jJ-aF-q3p"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull to refresh sharks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aby-rJ-bAx">
+                    <rect key="frame" x="253.5" y="86" width="128" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="R5Z-lB-RZJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="R5Z-lB-RZJ"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="c4b-cf-Wys" firstAttribute="top" secondItem="4zg-UK-ZIr" secondAttribute="topMargin" id="8A4-mF-PXl"/>
+                <constraint firstItem="c4b-cf-Wys" firstAttribute="centerY" secondItem="4zg-UK-ZIr" secondAttribute="centerY" id="BFU-Ee-CIG"/>
+                <constraint firstItem="zey-C2-9uu" firstAttribute="centerY" secondItem="4zg-UK-ZIr" secondAttribute="centerY" id="DBk-oz-7VG"/>
+                <constraint firstItem="c4b-cf-Wys" firstAttribute="centerX" secondItem="4zg-UK-ZIr" secondAttribute="centerX" id="FNH-o4-pDG"/>
+                <constraint firstItem="Aby-rJ-bAx" firstAttribute="centerX" secondItem="zey-C2-9uu" secondAttribute="centerX" constant="17" id="HYb-wt-gTR"/>
+                <constraint firstItem="zey-C2-9uu" firstAttribute="top" secondItem="4zg-UK-ZIr" secondAttribute="top" constant="47" id="S4y-7H-NVg"/>
+                <constraint firstAttribute="bottom" secondItem="Aby-rJ-bAx" secondAttribute="bottom" constant="20" id="YyF-2V-d6N"/>
+                <constraint firstItem="Aby-rJ-bAx" firstAttribute="top" secondItem="zey-C2-9uu" secondAttribute="bottom" constant="8" symbolic="YES" id="ecL-MJ-HEZ"/>
+                <constraint firstItem="c4b-cf-Wys" firstAttribute="top" secondItem="4zg-UK-ZIr" secondAttribute="top" constant="8" id="fEp-Ls-x28"/>
+                <constraint firstItem="zey-C2-9uu" firstAttribute="top" secondItem="c4b-cf-Wys" secondAttribute="bottom" constant="8" symbolic="YES" id="oaq-67-BET"/>
+                <constraint firstItem="zey-C2-9uu" firstAttribute="top" secondItem="c4b-cf-Wys" secondAttribute="bottom" constant="8" symbolic="YES" id="qy6-Qv-FDb"/>
+                <constraint firstItem="Aby-rJ-bAx" firstAttribute="top" secondItem="zey-C2-9uu" secondAttribute="bottom" constant="8" symbolic="YES" id="sMG-Os-zz6"/>
+                <constraint firstItem="c4b-cf-Wys" firstAttribute="leading" secondItem="zey-C2-9uu" secondAttribute="leading" id="wPI-Vc-ghe"/>
+                <constraint firstItem="c4b-cf-Wys" firstAttribute="trailing" secondItem="zey-C2-9uu" secondAttribute="trailing" id="xNU-My-Ucw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="YyF-2V-d6N"/>
+                    <exclude reference="ecL-MJ-HEZ"/>
+                    <exclude reference="8A4-mF-PXl"/>
+                    <exclude reference="BFU-Ee-CIG"/>
+                    <exclude reference="fEp-Ls-x28"/>
+                    <exclude reference="DBk-oz-7VG"/>
+                    <exclude reference="oaq-67-BET"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="865" y="298.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Pull to refresh 1.png" width="22" height="31"/>
+        <image name="Pull to refresh 2.png" width="28" height="44"/>
+    </resources>
+</document>
